@@ -252,6 +252,29 @@ aside {
     font-size: 18px;
   }
 
+    nav ul {
+    flex-direction: row;           /* mantener horizontal */
+    justify-content: center;       /* centrar los items para que no queden pegados a la derecha */
+    flex-wrap: wrap;               /* permitir que los items hagan salto de línea si no caben */
+    height: auto;                  /* quitar altura fija */
+    background-color: #ccc;
+    padding: 5px 0;
+  }
+
+  nav ul li {
+    padding: 8px 12px;             /* menos padding para que quepa más */
+    position: relative;
+  }
+
+  nav ul li:not(:last-child)::after {
+    content: "";                  /* mantener la línea divisoria */
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background-color: #a50044;
+  }
 
   article {
     padding: 10px;
@@ -264,12 +287,12 @@ aside {
   }
 
   table {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   th,
   td {
-    padding: 6px;
+    padding: 9px;
   }
 
   footer {
@@ -281,14 +304,14 @@ aside {
 
 /* Ocultar la imagen del login si la orientación es vertical*/
 @media screen and (max-width: 768px) and (orientation: portrait) {
-    aside {
-        display: none;
-    }
+  aside {
+    display: none;
+  }
 
-    form {
-        width: 100%;
-        height: 100vh; 
-        padding: 20px;  
-        box-shadow: none;
-    }
+  form {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: none;
+  }
 }
