@@ -1,60 +1,59 @@
-
 /* Generales*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
 header h1 {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px 0;
-    margin: 0;
-    font-size: 39px;
-    color: white;
-    background-color: #181733;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 39px;
+  color: white;
+  background-color: #181733;
 }
 
 h2 {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 0;
-    margin: 0;
-    color: white;
-    background-color: #a50044;
-    margin-bottom: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 0;
+  margin: 0;
+  color: white;
+  background-color: #a50044;
+  margin-bottom: 20px;
 }
 
-h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
-h3 p{
+h3 p {
   max-width: 60ch;
 }
 
 
 /* De la página de menú principal*/
-header p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #edbb00;
-    font-weight: bold;
-    text-align: center;
-    font-size: large;
-    background-color: #181733;
+header p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #edbb00;
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+  background-color: #181733;
 }
 
 article {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #a50044;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #a50044;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 article img {
@@ -67,10 +66,10 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;          
-  justify-content: flex-end; 
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  height: 30px; 
+  height: 30px;
   background-color: #ccc;
 }
 
@@ -84,19 +83,19 @@ nav ul li:not(:last-child)::after {
   position: absolute;
   right: 0;
   top: 10%;
-  height: 90%;       
+  height: 90%;
   width: 1px;
-  background-color: #a50044; 
+  background-color: #a50044;
 }
 
 .visually-hidden {
   position: absolute !important;
-  width: 1px; 
-  height: 1px; 
-  padding: 0; 
-  margin: -1px; 
-  overflow: hidden; 
-  clip: rect(0, 0, 0, 0); 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
@@ -107,7 +106,7 @@ main section {
   padding: 0 10px;
 }
 
-footer{
+footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   background-color: #181733;
@@ -119,10 +118,11 @@ footer{
 table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; 
+  table-layout: fixed;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #181733;
   padding: 8px;
   text-align: center;
@@ -136,162 +136,168 @@ th {
 
 /* De la página de inicio de sesión*/
 .login-layout {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
 
 form {
-    width: 50%;
-    height: 100vh;
-    padding: 90px;
-    background-color: #181733;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100vh;
+  padding: 90px;
+  background-color: #181733;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
 }
 
 fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 legend {
-    margin-bottom: 50px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
 }
 
 label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: white;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
 }
 
 input {
-    width: 100%;
-    padding: 18px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 #msjError {
-    color: red;
-    font-weight: bold;
-    margin-bottom: 10px;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 button {
-    width: 100%;
-    padding: 20px;
-    background-color: #a50044;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  background-color: #a50044;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 aside {
-    width: 50%;
-    min-height: 80vh;
-    background-image: url('imagenes/barcelonaEscudo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  min-height: 80vh;
+  background-image: url('imagenes/barcelonaEscudo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Uso de media queries para dispositivos móviles */
 @media screen and (max-width: 768px) {
-    /* Ajustes para layout login */
-    .login-layout {
-        flex-direction: column;
-    }
+  .login-layout {
+    flex-direction: column;
+  }
 
-    form,
-    aside {
-        width: 100%;
-        height: auto;
-    }
+  form,
+  aside {
+    width: 100%;
+    height: auto;
+  }
 
-    aside {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 200px;
-    }
+  aside {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+  }
 
-    form {
-        box-shadow: none;
-        padding: 20px;
-    }
+  form {
+    box-shadow: none;
+    padding: 20px;
+  }
 
-    header h1 {
-      font-size: 28px;
-    }
+  header h1 {
+    font-size: 28px;
+  }
 
-    header p {
-      font-size: medium;
-    }
+  header p {
+    font-size: medium;
+  }
 
-    h2 {
-      font-size: 24px;
-      padding: 10px 0;
-    }
+  h2 {
+    font-size: 24px;
+    padding: 10px 0;
+  }
 
-    h3 {
-      font-size: 18px;
-    }
+  h3 {
+    font-size: 18px;
+  }
 
-    nav ul {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      height: auto;
-      background-color: transparent;
-    }
+  nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    background-color: transparent;
+  }
 
-    nav ul li {
-      padding: 8px 0;
-      position: static;
-      border-bottom: 1px solid #a50044;
-    }
+  nav ul li {
+    padding: 8px 0;
+    position: static;
+    border-bottom: 1px solid #a50044;
+  }
 
-    nav ul li:not(:last-child)::after {
-      content: none;
-    }
+  nav ul li:not(:last-child)::after {
+    content: none;
+  }
 
-    article {
-      padding: 10px;
-      margin: 10px;
-    }
+  article {
+    padding: 10px;
+    margin: 10px;
+  }
 
-    article img {
-      max-width: 100%;
-      height: auto;
-    }
+  article img {
+    max-width: 100%;
+    height: auto;
+  }
 
-    table {
-      font-size: 12px;
-    }
+  table {
+    font-size: 12px;
+  }
 
-    th, td {
-      padding: 6px;
-    }
+  th,
+  td {
+    padding: 6px;
+  }
 
-    footer {
-      font-size: 8px;
-      text-align: center;
-      padding: 5px;
-    }
+  footer {
+    font-size: 8px;
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  aside {
+    display: none;
+  }
 }
