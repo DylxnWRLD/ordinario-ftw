@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+header h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 0;
+    margin: 0;
+    color: white;
+    background-color: #181733;
+}
+
+.login-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+form {
+    width: 50%;
+    height: 90vh;
+    padding: 90px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#error-msg {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    background-color: #a50044;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+aside {
+    width: 50%;
+    min-height: 80vh;
+    background-image: url('/imagenes/barcelonaEscudo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* Responsive para móviles */
+@media screen and (max-width: 768px) {
+    .login-layout {
+        flex-direction: column;
+    }
+
+    form,
+    aside {
+        width: 100%;
+        height: auto;
+    }
+
+    aside {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 200px;
+    }
+
+    form {
+        box-shadow: none;
+        padding: 20px;
+    }
+}
