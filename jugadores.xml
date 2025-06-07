@@ -1,4 +1,4 @@
-<plantilla>
+<jugadores>
   <jugador>
     <nombre>Marc-André ter Stegen</nombre>
     <posicion>Portero</posicion>
@@ -78,4 +78,4 @@
     <goles>10</goles>
     <asistencias>5</asistencias>
   </jugador>
-</plantilla>
+</jugadores>

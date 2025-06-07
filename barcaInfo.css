@@ -113,6 +113,7 @@ footer {
   padding: 10px;
   font-size: 10px;
   text-align: end;
+  margin-top: 10px;
 }
 
 table {
@@ -253,21 +254,21 @@ aside {
   }
 
     nav ul {
-    flex-direction: row;           /* mantener horizontal */
-    justify-content: center;       /* centrar los items para que no queden pegados a la derecha */
-    flex-wrap: wrap;               /* permitir que los items hagan salto de línea si no caben */
-    height: auto;                  /* quitar altura fija */
+    flex-direction: row;           
+    justify-content: end;      
+    flex-wrap: wrap;               
+    height: auto;                  
     background-color: #ccc;
-    padding: 5px 0;
+    padding: 3px 0;
   }
 
   nav ul li {
-    padding: 8px 12px;             /* menos padding para que quepa más */
+    padding: 8px 12px;            
     position: relative;
   }
 
   nav ul li:not(:last-child)::after {
-    content: "";                  /* mantener la línea divisoria */
+    content: "";                 
     position: absolute;
     right: 0;
     top: 20%;
