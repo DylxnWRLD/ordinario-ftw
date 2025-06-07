@@ -252,23 +252,6 @@ aside {
     font-size: 18px;
   }
 
-  nav ul {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
-    background-color: transparent;
-  }
-
-  nav ul li {
-    padding: 8px 0;
-    position: static;
-    border-bottom: 1px solid #a50044;
-  }
-
-  nav ul li:not(:last-child)::after {
-    content: none;
-  }
 
   article {
     padding: 10px;
