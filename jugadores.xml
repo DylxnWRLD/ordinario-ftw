@@ -1,0 +1,81 @@
+<plantilla>
+  <jugador>
+    <nombre>Marc-André ter Stegen</nombre>
+    <posicion>Portero</posicion>
+    <numero>1</numero>
+    <goles>0</goles>
+    <asistencias>0</asistencias>
+  </jugador>
+
+  <jugador>
+    <nombre>Ronald Araújo</nombre>
+    <posicion>Defensa</posicion>
+    <numero>4</numero>
+    <goles>3</goles>
+    <asistencias>1</asistencias>
+  </jugador>
+
+  <jugador>
+    <nombre>Jules Koundé</nombre>
+    <posicion>Defensa</posicion>
+    <numero>23</numero>
+    <goles>1</goles>
+    <asistencias>2</asistencias>
+  </jugador>
+
+  <jugador>
+    <nombre>Pedri</nombre>
+    <posicion>Centrocampista</posicion>
+    <numero>8</numero>
+    <goles>6</goles>
+    <asistencias>8</asistencias>
+  </jugador>
+
+  <jugador>
+    <nombre>Gavi</nombre>
+    <posicion>Centrocampista</posicion>
+    <numero>30</numero>
+    <goles>5</goles>
+    <asistencias>4</asistencias>
+  </jugador>
+
+  <jugador>
+    <nombre>Frenkie de Jong</nombre>
+    <posicion>Centrocampista</posicion>
+    <numero>21</numero>
+    <goles>5</goles>
+    <asistencias>10</asistencias>
+  </jugador>
+
+  <jugador>
+    <nombre>Robert Lewandowski</nombre>
+    <posicion>Delantero</posicion>
+    <numero>9</numero>
+    <goles>23</goles>
+    <asistencias>7</asistencias>
+  </jugador>
+
+  <jugador>
+    <nombre>Lamine Yamal</nombre>
+    <posicion>Delantero</posicion>
+    <numero>27</numero>
+    <goles>8</goles>
+    <asistencias>6</asistencias>
+  </jugador>
+
+  <jugador>
+    <nombre>Álex Balde</nombre>
+    <posicion>Defensa</posicion>
+    <numero>28</numero>
+    <goles>2</goles>
+    <asistencias>3</asistencias>
+  </jugador>
+
+  <jugador>
+    <nombre>Ferran Torres</nombre>
+    <posicion>Delantero</posicion>
+    <numero>11</numero>
+    <goles>10</goles>
+    <asistencias>5</asistencias>
+  </jugador>
+</plantilla>
