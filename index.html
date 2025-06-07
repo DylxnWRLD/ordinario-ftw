@@ -5,11 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio de Sesión</title>
-
   <link rel="stylesheet" href="barcaInfo.css">
-
 </head>
-
 
 <body>
 
@@ -19,33 +16,29 @@
 
   <main class="login-layout">
 
-    <form action="/login" method="post" aria-labelledby="titulo_formulario" novalidate>
+    <form action="/login" method="post" novalidate>
       <fieldset>
-        <legend id="titulo_formulario">Accede a tu cuenta</legend>
+        <legend>Accede a tu cuenta</legend>
+
         <div>
           <label for="correo">Correo Electrónico:</label>
-          <input type="email" name="correo" id="correo" required autocomplete="email" aria-required="true"
-            aria-describedby="error-msg">
+          <input type="email" name="correo" id="correo" required autocomplete="email" aria-required="true" aria-describedby="msjError">
         </div>
+
         <div>
           <label for="contrasena">Contraseña:</label>
-          <input type="password" name="contrasena" id="contrasena" required autocomplete="current-password"
-            aria-required="true" aria-describedby="error-msg">
+          <input type="password" name="contrasena" id="contrasena" required autocomplete="current-password" aria-required="true" aria-describedby="msjError">
         </div>
       </fieldset>
 
-      <div id="error-msg" role="alert" aria-live="assertive" hidden>
-        Usuario o contraseña incorrectos
-      </div>
+      <div id="msjError" role="alert" aria-live="assertive" hidden></div>
 
       <button type="submit">Iniciar Sesión</button>
     </form>
 
-
     <aside></aside>
+
   </main>
-
-
 
   <script src="inicioSesion.js" defer></script>
 </body>

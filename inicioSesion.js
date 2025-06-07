@@ -2,7 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
   const correoInput = document.getElementById('correo');
   const contrasenaInput = document.getElementById('contrasena');
-  const errorMsg = document.getElementById('error-msg');
+  const msjError = document.getElementById('msjError');
+
+  function mostrarError(mensaje) {
+    msjError.textContent = mensaje;
+    msjError.hidden = false;
+    msjError.setAttribute('aria-hidden', 'false');
+  }
+
+  function ocultarError() {
+    msjError.hidden = true;
+    msjError.setAttribute('aria-hidden', 'true');
+  }
 
   form.addEventListener('submit', e => {
     e.preventDefault();
@@ -11,24 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const contrasena = contrasenaInput.value.trim();
 
     if (correo === '' || contrasena === '') {
-      errorMsg.textContent = 'Por favor, completa todos los campos.';
-      errorMsg.hidden = false;
+      mostrarError('Por favor, completa todos los campos.');
       return;
     }
 
-    if (correo === 'usuario@ejemplo.com' && contrasena === '1234') {
-      errorMsg.hidden = true;
+    if (correo === 'usuario@ejemplo.com' && contrasena === 'nuol2216') {
+      ocultarError();
       window.location.href = 'menuPrincipal.html';
     } else {
-      errorMsg.textContent = 'Usuario o contraseña incorrectos';
-      errorMsg.hidden = false;
+      mostrarError('Usuario o contraseña incorrectos');
     }
   });
 
-  correoInput.addEventListener('input', () => {
-    errorMsg.hidden = true;
-  });
-  contrasenaInput.addEventListener('input', () => {
-    errorMsg.hidden = true;
-  });
+  correoInput.addEventListener('input', ocultarError);
+  contrasenaInput.addEventListener('input', ocultarError);
 });
