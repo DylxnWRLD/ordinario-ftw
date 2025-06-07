@@ -7,12 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function mostrarError(mensaje) {
     msjError.textContent = mensaje;
     msjError.hidden = false;
-    msjError.setAttribute('aria-hidden', 'false');
   }
 
   function ocultarError() {
     msjError.hidden = true;
-    msjError.setAttribute('aria-hidden', 'true');
   }
 
   form.addEventListener('submit', e => {
