@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const contrasenaInput = document.getElementById('contrasena');
   const msjError = document.getElementById('msjError');
 
-  function mostrarError(mensaje) {
+  function mostrarError(mensaje, campoFoco) {
     msjError.textContent = mensaje;
     msjError.hidden = false;
+    campoFoco.focus(); // 💡 Apunta el foco al campo incorrecto
   }
 
   function ocultarError() {
@@ -19,8 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const correo = correoInput.value.trim();
     const contrasena = contrasenaInput.value.trim();
 
-    if (correo === '' || contrasena === '') {
-      mostrarError('Por favor, completa todos los campos.');
+    if (correo === '') {
+      mostrarError('Por favor, escribe tu correo.', correoInput);
+      return;
+    }
+
+    if (contrasena === '') {
+      mostrarError('Por favor, escribe tu contraseña.', contrasenaInput);
       return;
     }
 
@@ -28,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ocultarError();
       window.location.href = 'menuPrincipal.html';
     } else {
-      mostrarError('Usuario o contraseña incorrectos');
+      mostrarError('Usuario o contraseña incorrectos.', contrasenaInput);
     }
   });
 
