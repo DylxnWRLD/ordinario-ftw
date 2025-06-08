@@ -34,8 +34,6 @@ h3 {
   font-weight: bold;
 }
 
-
-
 /* De la página de menú principal*/
 header p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -46,7 +44,7 @@ header p {
   background-color: #181733;
 }
 
-p{
+p {
   text-align: justify;
 }
 
@@ -135,7 +133,7 @@ th {
   background-color: #f2f2f2;
 }
 
-caption{
+caption {
   margin-bottom: 10px;
 }
 
@@ -257,22 +255,22 @@ aside {
     font-size: 18px;
   }
 
-    nav ul {
-    flex-direction: row;           
-    justify-content: end;      
-    flex-wrap: wrap;               
-    height: auto;                  
+  nav ul {
+    flex-direction: row;
+    justify-content: end;
+    flex-wrap: wrap;
+    height: auto;
     background-color: #ccc;
     padding: 3px 0;
   }
 
   nav ul li {
-    padding: 8px 12px;            
+    padding: 8px 12px;
     position: relative;
   }
 
   nav ul li:not(:last-child)::after {
-    content: "";                 
+    content: "";
     position: absolute;
     right: 0;
     top: 20%;
